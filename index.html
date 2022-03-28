@@ -33,7 +33,7 @@
 
             </div>
 
-            <div class="pesquisa">Pesquisar</div>
+            <input type="search" placeholder="Pesquisar"/>
             <div class="icones">
                 <div class="direct">
                     <ion-icon name="paper-plane-outline"></ion-icon>
@@ -262,6 +262,40 @@
 
                 </div>
 
+                <div class="post">
+                    <div class="barra-superior">
+                        <img src="img/9gag 1.png">
+                        <h4>9camp</h4>
+                        <ion-icon name="ellipsis-horizontal"></ion-icon>
+
+                    </div>
+                    <video controls muted autoplay>
+                        <source src="vid/video.mp4" type="video/mp4">
+                        <source src="vid/video.ogv" type="video/ogv">
+                    </video>
+
+                    <div class="barra-inferior">
+                        <div class="center icones-inferiores">
+                            <div class="center">
+                                <ion-icon name="heart-outline"></ion-icon>
+                                <ion-icon name="chatbubble-outline"></ion-icon>
+                                <ion-icon name="paper-plane-outline"></ion-icon>
+                            </div>
+                            <div class="center">
+                                <ion-icon name="bookmark-outline"></ion-icon>
+                            </div>
+
+                        </div>
+                        <div class="likes">
+                            <img src="img/perfil.jpg">
+                            <P>Curtido por <strong>nrdeandrade</strong> e <strong>outras 59.194 pessoas</strong></P>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
 
 
             </div>
@@ -396,18 +430,18 @@
 
         
 
-        document.getElementById("click").addEventListener("mouseenter", estrelinha);
-        document.getElementById("click").addEventListener("mouseleave", estrelinha);
+        document.getElementById("click").addEventListener("mouseenter", mover);
+        document.getElementById("click").addEventListener("mouseleave", mover);
 
         const x = document.getElementById("stories");
 
-        function estrelinha() {
+        function mover() {
 
 
-            if (x.style.justifyContent === "flex-end") {
-                x.style.justifyContent = "flex-start"
+            if (x.style.justifyContent === "end") {
+                x.style.justifyContent = "start"
             } else {
-                x.style.justifyContent = "flex-end"
+                x.style.justifyContent = "end"
             }
            
         }

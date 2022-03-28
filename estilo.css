@@ -66,9 +66,12 @@ p {
     color: #000000;
 }
 
-.logo img {
+.menu-superior img {
     width: 103px;
     height: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+    
 
 }
 
@@ -87,6 +90,7 @@ ion-icon:hover {
     transform: scale(1.2);
     cursor: pointer;
     transition: 200ms;
+    
 }
 
 .barra-topo {    
@@ -137,20 +141,25 @@ ion-icon:hover {
     display: none;  
 }
 
+video {
+    width: 612px;
+    height: 612px;
+    background-color: #000000;
+}
 
-
-.pesquisa {
+input {
     background-color: #fafafa;
     border: 1px solid #DBDBDB;
     border-radius: 5px;
     width: 215px;
     height: 28px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    text-justify: center;
     color: #979797;
     font-weight: 400;
     font-size: 12px;
+    outline: none;
 }
 
 .icones {
@@ -162,7 +171,11 @@ ion-icon:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 8px 0;  
+    margin: 8px 0px;  
+}
+
+.flex h3 {
+    cursor: pointer;
 }
 
 .icones div {
@@ -212,11 +225,6 @@ ion-icon:hover {
     z-index: 1;
 }
 
-/* 
-.stories ion-icon:hover {
-    
-
-} */
 
 .story {    
     
@@ -234,7 +242,8 @@ ion-icon:hover {
     top: 15px;
     left: 9px;
     z-index: 1;
-    border-radius: 100%;  
+    border-radius: 100%; 
+    cursor: pointer; 
 }
 
 .img-borda {
@@ -295,6 +304,7 @@ ion-icon:hover {
     height: 32px;
     margin: 15px 15px 14px 17px;
     border-radius: 100%;
+    cursor: pointer;
 
 }
 
@@ -327,6 +337,12 @@ ion-icon:hover {
     margin: 0 8px 0 8px;
     width: 20px;
     height: 20px;
+        
+}
+
+.icones-inferiores  ion-icon:hover {
+    color: #1b1b1b;
+    filter: brightness(5)
     
 }
 
@@ -348,6 +364,7 @@ ion-icon:hover {
 .likes img {
     width: 20px;
     height: 20px;
+    border-radius: 100%;
     margin: 0 8px 0 8px;
 
 }
@@ -390,6 +407,7 @@ ion-icon:hover {
     height: 56px;
     border-radius: 28px; 
     margin: 23px 17px 24px 0px;
+    cursor: pointer;
 }
 
 .sugestoes {    
@@ -401,7 +419,9 @@ ion-icon:hover {
 .icones img {
     width: 32px;
     height: 32px;
+    cursor: pointer;
 }
+
 
 .menu-inferior {
     display: none;
@@ -415,6 +435,16 @@ ion-icon:hover {
     .conteudo {
         margin: 0   
     }
+
+    .flex {
+        margin-left: 5px;  
+    }
+
+    .icones {
+        margin-right: 5px;
+    }
+
+    
 }
 
 @media (max-width: 614px) {
@@ -438,23 +468,22 @@ ion-icon:hover {
 
     .menu-superior-mobile ion-icon {
         margin: 0px 15px;
+        cursor: pointer;
+    }
+
+    .menu-superior-mobile img {
+        cursor: pointer;
     }
 
     .container {
         display: flex;
         justify-content: center;
-        border: 1px solid blue;
         margin-top: 54px;
         max-width: 942px;
     }
 
     .conteudo {
-        
         width: 100%;
-        
-        
-        
-    
     }
 
     .stories {
@@ -491,6 +520,11 @@ ion-icon:hover {
     }
 
     .post img:nth-child(2) {
+        width: 100%;
+        height: auto;  
+    }
+
+    video {
         width: 100%;
         height: auto;  
     }
